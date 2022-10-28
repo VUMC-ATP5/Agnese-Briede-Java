@@ -1,12 +1,9 @@
 package lekcijaDivi.labDarbs;
 
-import java.sql.PreparedStatement;
 import java.util.Scanner;
 
-public class LaboratorijasDarbsDivi {
+public class Main {
 
-
-    public class Main {
         public static void main(String[] args) {
 
             int x = 3;
@@ -207,7 +204,7 @@ public class LaboratorijasDarbsDivi {
             //System.out.println("Vai cilveks var balsot "+(vecums>=18));
 
 
-        }
+
     }
 
 }
