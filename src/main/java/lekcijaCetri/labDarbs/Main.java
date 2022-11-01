@@ -74,7 +74,7 @@ public class Main {
         masinaViens.nobraukums = 100150;
         masinaViens.printAuto();
 
-        Rinkis rinkis1 = new Rinkis(5);
+        Rinkis rinkis1 = new Rinkis(4);
         System.out.println(rinkis1.rekinatLaukumu());
         System.out.println(rinkis1.rekinatRinkaLinijasGarumu());
 
