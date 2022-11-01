@@ -100,7 +100,7 @@ public class HomeWorkTwo {
         numbers.add(readInput.nextInt());
 
 
-        int currentHighest = 0;
+        int currentHighest = Integer.MIN_VALUE;
         for (int currentNumber : numbers) {
             if (currentNumber > currentHighest) {
                 currentHighest = currentNumber;
