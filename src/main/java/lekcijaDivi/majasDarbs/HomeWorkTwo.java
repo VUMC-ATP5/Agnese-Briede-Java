@@ -128,13 +128,14 @@ public class HomeWorkTwo {
             System.out.println("CHECK SIGNS");
         }
 
+        //uzdevums 5. un 6.
+
         printBusinessCard();
         printBusinessCard();
         printBusinessCard();
 
         printBussinesCard2("Agnese", "Briede", 25457833, 1993);
-        printBussinesCard2("Agnese", "Briede", 25457833, 1993);
-        printBussinesCard2("Agnese", "Briede", 25457833, 1993);
+        printBussinesCard2("Ilze", "Apse", 25465894, 1983);
 
     }
 
