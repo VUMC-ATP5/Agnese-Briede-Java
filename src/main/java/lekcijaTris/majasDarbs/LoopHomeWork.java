@@ -56,8 +56,10 @@ public class LoopHomeWork {
             System.out.println(chars[j]);
         }
 
-        //3. uzdevums izdevaas izpildiit nosaciijumu, bet nesapratu vai tikai viena liinija jaaizprintee vai visas 100 reizes,
-        //uzjautaaju pasniedzeejam par so
+        //3. uzdevums izdevaas izpildiit nosaciijumu, bet nesapratu vai tikai viena liinija jaaizprintee
+        // vai visas 100 reizes, uzjautaaju pasniedzeejam par so
+        // System.out.print - 1 līnija, System.out.println -
+        // vairakas līnijas, jeb tik cik ir padots
 
         int[] myIntArray = IntStream.rangeClosed(0, 100).toArray();
 
