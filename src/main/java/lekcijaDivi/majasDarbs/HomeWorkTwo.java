@@ -32,7 +32,7 @@ public class HomeWorkTwo {
         System.out.println(x * x > 10);
 
 
-        //2. uzdevums
+        //2. uzdevums par meenesiem
         System.out.println("Please enter calendar months number from 1-12: ");
 
         Scanner sc = new Scanner(System.in);
@@ -80,7 +80,7 @@ public class HomeWorkTwo {
 
         }
 
-        //3.uzdevums
+        //3.uzdevums par lielaako skaitli no 3
 
         Scanner readInput = new Scanner(System.in);
 
@@ -94,6 +94,7 @@ public class HomeWorkTwo {
 //
 //        System.out.println("Highest number is " + Math.max(a,b));
 
+        //izveidojam listi ar padotaam veselaa veertiibaam
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         numbers.add(readInput.nextInt());
         numbers.add(readInput.nextInt());
@@ -108,7 +109,7 @@ public class HomeWorkTwo {
         }
         System.out.println("The highest number is: " + currentHighest);
 
-        //4. uzdevums
+        //4. uzdevums par luksaforiem
 
         String trafficLight;
         System.out.println("Please enter traffic light colour");
@@ -128,7 +129,7 @@ public class HomeWorkTwo {
             System.out.println("CHECK SIGNS");
         }
 
-        //uzdevums 5. un 6.
+        //uzdevums 5. un 6. par biznesa kartiiteem
 
         printBusinessCard();
         printBusinessCard();
