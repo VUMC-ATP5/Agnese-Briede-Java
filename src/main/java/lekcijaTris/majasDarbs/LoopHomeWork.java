@@ -59,15 +59,22 @@ public class LoopHomeWork {
         //3. uzdevums izdevaas izpildiit nosaciijumu, bet nesapratu vai tikai viena liinija jaaizprintee
         // vai visas 100 reizes, uzjautaaju pasniedzeejam par so
         // System.out.print - 1 līnija, System.out.println -
-        // vairakas līnijas, jeb tik cik ir padots
+        // vairakas līnijas, jeb tik cik ir pateikts
 
         int[] myIntArray = IntStream.rangeClosed(0, 100).toArray();
 
         for (int j = 0; j < myIntArray.length; j++) {
             if (myIntArray[j] % 2 == 0) {
-                System.out.print(Arrays.toString(myIntArray));
+                System.out.print(myIntArray[j]);
             }
         }
+
+        int[] skaitluMasivs =  new int[100];
+        for (int v = 0; v < skaitluMasivs.length; v++) {
+            skaitluMasivs[v] = v * 2;
+            System.out.print(v*2);
+        }
+
         //4. uzdevums par fakoriaalu
 
         System.out.println("Home work about factorial");

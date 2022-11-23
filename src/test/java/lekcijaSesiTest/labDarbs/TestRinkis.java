@@ -2,7 +2,7 @@ package lekcijaSesiTest.labDarbs;
 
 import lekcijaCetri.labDarbs.Rinkis;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class TestRinkis {
 
@@ -19,13 +19,35 @@ public class TestRinkis {
         //assert/assertion - pārbaudes
         Assert.assertEquals(actualArea,expectedArea);
 
+    }
+
+    @BeforeTest
+    public void beforeTest (){
+        System.out.println("Shii ir BEFORE test anotaacija");
+    }
+
+    @AfterTest
+    public void afterTest (){
+        System.out.println("Shii ir After test anotaacija");
+    }
+
+
+    @BeforeMethod
+    public void setup (){
+        System.out.println("Shii metode tiek izpildiita pirms katra testa");
 
     }
+
+    @AfterMethod
+    public void afterWork(){
+        System.out.println("Shii metode straadaa AFTER/katra testa");
+    }
+
     @Test
     public void rekinatRinkaLinijasGarumu (){
 
         Rinkis mansRinkisDivi = new Rinkis(4);
-        Double expectedLenght = 26.12;
+        Double expectedLenght = 25.12;
         Double actualLenght =mansRinkisDivi.rekinatRinkaLinijasGarumu();
         Assert.assertEquals(expectedLenght,actualLenght);
 
