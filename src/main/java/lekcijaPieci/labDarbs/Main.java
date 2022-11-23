@@ -37,6 +37,8 @@ public class Main {
         house.printHouse();
         house.setAdrese("Tallinas iela");
 
+        Dog suns = new Dog();
+
         System.out.println("Majas adrese ir:" + house.getAdrese());
 
         System.out.println(Calculator.add(5, 10));

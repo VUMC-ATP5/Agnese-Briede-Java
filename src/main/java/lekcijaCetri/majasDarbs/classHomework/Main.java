@@ -1,29 +1,21 @@
 package lekcijaCetri.majasDarbs.classHomework;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        int a,b,c,sp;
-        double area;
 
-        System.out.println("Enter value for sides of trinagle");
-        Scanner r = new Scanner(System.in);
-        a=r.nextInt();
-        b=r.nextInt();
-        c=r.nextInt();
+        Triangle t1 = new Triangle();
+        t1.a = 19;
+        t1.b = 23;
+        t1.c = 2;
 
-        sp=(a+b+c)/2;
+        System.out.println("Area of the first triangle is " + t1.calculateArea());
 
-        area=Math.sqrt(sp*(sp-a)*(sp-b)*(sp-c));
-
-        Triangle t = new Triangle();
         System.out.println("");
 
-        System.out.println("Area of triangle " + t.area);
-
+        Triangle t3 = new Triangle(1, 2, 5);
+        System.out.println("Area of the second triangle " + t3.calculateArea());
 
 
     }

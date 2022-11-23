@@ -1,45 +1,28 @@
 package lekcijaCetri.majasDarbs.classHomework;
 
-import java.util.Scanner;
-
-import static java.lang.Math.sqrt;
-
 public class Triangle {
 
-    int a, b, c, sp;
-    double area;
+    public int a, b, c, sp=0;
+    public double area= 0.0;
 
     public Triangle(){
-        this.a = 2;
-        this.b = 2;
-        this.c = 3;
-        this.sp = this.calculateSp();
-        this.area = this.calculateArea();
+        System.out.println("We are creating triangles");
+
     }
 
     public Triangle(int a, int b, int c) {
         this.a = a;
         this.b = b;
         this.c = c;
-        this.sp = this.calculateSp();
-        this.area = this.calculateArea();
     }
 
-    public Triangle(int a, int b, int c, double area) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-        this.sp = this.calculateSp();
-        this.area = area;
-    }
-
-
-
-    private double calculateArea(){
+    public double calculateSp(){
+        System.out.println(this.sp * (this.sp - this.a) * (this.sp - this.b) * (this.sp - this.c));
+        System.out.println(Math.sqrt(this.sp * (this.sp - this.a) * (this.sp - this.b) * (this.sp - this.c)));
         return Math.sqrt(this.sp * (this.sp - this.a) * (this.sp - this.b) * (this.sp - this.c));
     }
 
-    private int calculateSp(){
+    public int calculateArea(){
         return (this.a + this.b + this.c) / 2;
     }
 
@@ -53,10 +36,10 @@ public class Triangle {
     }
 
 
-    public static void main(String[] args) {
-        Triangle noConstructorTriangle = new Triangle(); //uses the constructor with 0 arguments
-        Triangle withhoutArea = new Triangle(2, 3, 4); //uses the constructor with only 3 arguments
-        Triangle withArea = new Triangle(2,2, 2, 6); // uses the constructor with 4 arguments
-    }
+//    //public static void main(String[] args) {
+//        Triangle noConstructorTriangle = new Triangle(); //uses the constructor with 0 arguments
+//        //Triangle withhoutArea = new Triangle(2, 3, 4); //uses the constructor with only 3 arguments
+//        Triangle withArea = new Triangle(2,2, 2, 6); // uses the constructor with 4 arguments}
+
 }
 
