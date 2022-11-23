@@ -16,9 +16,12 @@ public class BaseTest {
     @BeforeMethod
     public void setupBrowser() {
         browser = new ChromeDriver();
+        browser.manage().window().maximize();
+        //par implicitly wait metodi, kameer tas neatrod elementu
+        browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         wait = new WebDriverWait(browser, Duration.of(10, ChronoUnit.SECONDS));
         browser.navigate().to("https://www.saucedemo.com/");
-        browser.manage().window().maximize();
+
 
     }
 

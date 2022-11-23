@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -66,7 +68,12 @@ public class SauceDemoLoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(browser);
         loginPage.login("standard_user", "secret_sauce");
         ProductsPage productsPage = new ProductsPage(browser);
+
+        //gaidi tik ilgi kameer paraadas elements --- productsPage.getPageTitle()
+        wait.until(ExpectedConditions.visibilityOf(productsPage.getPageTitle()));
         Assert.assertEquals(productsPage.getPageTitle().getText(),"PRODUCTS");
+
+        //ExpectedConditions.elementToBeClickable(ExpectedConditions.elementToBeClickable());
 
     }
 
