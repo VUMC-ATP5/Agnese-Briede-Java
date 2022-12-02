@@ -3,6 +3,8 @@ package lekcijaSesi.majasDarbs;
 public class Calculator {
 
     int result;
+    int a;
+    int b;
 
     //Method for addition
 

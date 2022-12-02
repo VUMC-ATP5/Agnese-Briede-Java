@@ -13,6 +13,8 @@ public class ProductsPage extends BasePage {
 
 
     private By pageTitle = By.cssSelector("span.title");
+
+    private By linkedinButton = By.cssSelector("li.social_linkedin >a");
     private By cartButton = By.id("shopping_cart_container");
 
     public ProductsPage(WebDriver browser) {
@@ -22,6 +24,10 @@ public class ProductsPage extends BasePage {
     public WebElement getCartButton(){
         wait.until(ExpectedConditions.elementToBeClickable(cartButton));
         return driver.findElement(cartButton);
+    }
+
+    public WebElement getLinkedinButton(){
+        return driver.findElement(linkedinButton);
     }
 
 }
